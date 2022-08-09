@@ -29,8 +29,21 @@
                 </ul>
             </nav>
             <ul class="mailto list">
-                <li class="mailto-items"><a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li class="tel-items"><a class="link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                <li class="mailto-items">
+                    <a class="mailto-link link" href="mailto:info@devstudio.com">
+                        <svg class="mailto-icon" width="16" , height="12">
+                            <use href="./images/sprite.svg#icon-envelope"></use>
+                        </svg>
+                        info@devstudio.com
+                    </a>
+                </li>
+                <li class="mailto-items"><a class="mailto-link link" href="tel:+380961111111">
+                        <svg class="mailto-icon" width="10" , height="16">
+                            <use href="./images/sprite.svg#icon-smartphone"></use>
+                        </svg>
+                        +38 096 111 11 11
+                    </a>
+                </li>
             </ul>
         </div>
     </header>
@@ -47,12 +60,14 @@
             </ul>
             <ul class="projects-list list">
                 <li class="projects-list-item">
-                <a class="link" href=""><img src="./images/project-img1.jpg" alt="Технокряк" width="370">
-                    <div class="projects-list-content-wrapper">
-                        <h2 class="title">Технокряк</h2>
-                        <p class="section-text">Веб-сайт</p>
+                    <div class="projects-list-item-wrapper">
+                        <a class="link" href=""><img src="./images/project-img1.jpg" alt="Технокряк" width="370">
+                        <div class="projects-list-content-wrapper">
+                            <h2 class="title">Технокряк</h2>
+                            <p class="section-text">Веб-сайт</p>
+                        </div>
+                        </a>
                     </div>
-                </a>
                 </li>
                 <li class="projects-list-item">
                     <a class="link" href=""><img src="./images/project-img2.jpg" alt="Постер New Orlean vs Golden Star" width="370">
@@ -125,17 +140,57 @@
     </main>
     <!-- Footer -->
     <footer class="footer">
-        <div class="container footer-container">
-            <a class="logo-footer" href="./index.html"><span class="left">Web</span><span class="right">Studio</span></a>
-            <address>
-                <a class="address" href="https://goo.gl/maps/v81cNEJhAymiVyWF6" target="_blank" rel="noreferrer noopener">г.
-                    Киев, пр-т Леси Украинки, 26</a>
-                <ul class="mailto-footer-list list">
-                    <li class="mailto-footer-list-items"><a class="link"
-                            href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                    <li class="mailto-footer-list-items"><a class="link" href="tel:+380991111111">+38 099 111 11 11</a></li>
+        <div class="container footer-wrapper">
+            <div class="footer-address">
+                <a class="logo-footer" href="./index.html"><span class="left">Web</span><span
+                        class="right">Studio</span></a>
+                <address class="address-wrapper">
+                    <a class="address-link" href="https://goo.gl/maps/v81cNEJhAymiVyWF6" target="_blank"
+                        rel="noreferrer noopener">г.
+                        Киев, пр-т Леси Украинки, 26</a>
+                    <ul class="mailto-footer-list list">
+                        <li class="mailto-footer-list-items">
+                            <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        </li>
+                        <li class="mailto-footer-list-items">
+                            <a class="link" href="tel:+380991111111">+38 099 111 11 11</a>
+                        </li>
+                    </ul>
+                </address>
+            </div>
+            <div class="footer-social">
+                <strong class="footer-social-title">Присоединяйтесь</strong>
+                <ul class="footer-social-list list">
+                    <li class="footer-social-list-item">
+                        <a href="#" class="footer-social-link">
+                            <svg class="footer-social-link-icon" width="20" height="20">
+                                <use href="./images/sprite.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer-social-list-item">
+                        <a href="#" class="footer-social-link link">
+                            <svg class="footer-social-link-icon" width="20" height="20">
+                                <use href="./images/sprite.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer-social-list-item">
+                        <a href="#" class="footer-social-link link">
+                            <svg class="footer-social-link-icon" width="20" height="20">
+                                <use href="./images/sprite.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer-social-list-item">
+                        <a href="#" class="footer-social-link link">
+                            <svg class="footer-social-link-icon" width="20" height="20">
+                                <use href="./images/sprite.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
                 </ul>
-            </address>
+            </div>
         </div>
     </footer>
  </body>
